@@ -65,7 +65,7 @@ const Main = () => {
         // console.log('successful:', responseData);
       } else {
         const responseData = await response.json();
-        console.error('Error concatenating PDFs:', responseData.error);
+        console.error('Error encountered:', responseData.error);
       }
     } catch (error) {
       toast.error("Error encountered!")
@@ -79,12 +79,12 @@ const Main = () => {
   const exportAsHtml = () => {
     const htmlContent=response.html_content;
     const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
-    saveAs(blob, 'exportedData.html');
+    saveAs(blob, 'QA Test.html');
   };
 
   const exportAsPdf = () => {
     const htmlContent=response.html_content;
-    html2pdf(htmlContent, { margin: 10, filename: 'exportedData.pdf' });
+    html2pdf(htmlContent, { margin: 10, filename: 'QA Test.pdf' });
   };
 
   return (

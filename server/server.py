@@ -115,6 +115,7 @@ def generate_qa():
         # topic="clustering in DBMS"
         print("topic:",topic)
         passages = get_relevant_passages(topic, db, n_results=2)
+        delete_db()
         # print("rel docs:", passages)
         # print(len(passages))
         combined_passage=""
@@ -125,14 +126,13 @@ def generate_qa():
         # query='Please generate 7 true false questions'
         print("recieved query", query)
         prompt = make_prompt(combined_passage, query)
-        # Markdown(prompt)
-
+        # print(prompt)
+        
         model = genai.GenerativeModel('gemini-pro')
+        print("generating response")
         answer = model.generate_content(prompt)
-        # print(answer.text)
+        print(answer.text)
         html_content = markdown.markdown(answer.text)
-
-        delete_db()
 
         return jsonify({"html_content": html_content, "relevant_passage":combined_passage}), 200
 
