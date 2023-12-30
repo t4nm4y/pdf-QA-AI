@@ -43,7 +43,9 @@ React.js, Python, Flask
     GOOGLE_API_KEY=your_key
 
 4. Run the application:
-   
+
+   (Run Backend and Frontend in separate terminals.)
+
    Backend:
    ```bash
    cd pdf-QA-AI/server
@@ -73,6 +75,24 @@ React.js, Python, Flask
 
 
 ## Screenshots:
+
+![Screenshot_20231230_213818](https://github.com/t4nm4y/pdf-QA-AI/assets/88146479/40091f25-ce96-4824-9eb7-0dfeb617d280)
+
+![image](https://github.com/t4nm4y/pdf-QA-AI/assets/88146479/d0e62476-647f-410d-914e-e2f7b0bd1a18)
+
+![image](https://github.com/t4nm4y/pdf-QA-AI/assets/88146479/dd00e809-86dc-46d4-a86c-d2ed36aee15d)
+
+![image](https://github.com/t4nm4y/pdf-QA-AI/assets/88146479/37e7467e-deab-4c91-907a-72006a107c3c)
+
+Exported documents:
+
+HTML format:
+
+![image](https://github.com/t4nm4y/pdf-QA-AI/assets/88146479/6d90b754-d0d9-4c68-8b19-92fc3b099960)
+
+Pdf format:
+
+![image](https://github.com/t4nm4y/pdf-QA-AI/assets/88146479/292c5108-8ab2-4ea1-95a8-954b29be840d)
 
 
 
