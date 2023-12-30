@@ -81,7 +81,7 @@ def make_prompt(relevant_passage, prompt):
     Also consider the prompt provided below for generating the result.\
     PROMT:'{prompt}'\
     PASSAGE: '{relevant_passage}'\
-    ANSWER: Be sure to generate the answers of all the questions in the end
+    ANSWER: Be sure to generate the answers of all the questions of all the types in the end
     """).format(relevant_passage=escaped, prompt=prompt)
 
     return prompt
