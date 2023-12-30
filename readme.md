@@ -1,5 +1,5 @@
 
-# AI based Question-Answer Generator
+# AI-based Question-Answer Generator
 This is an AI Test Generation Bot that accepts multiple PDF files as input, extracts relevant information and generates objective or subjective test questions along with answers based on user-specified topics, chapters, subjects
 
 It uses Google Generative AI API.
@@ -28,7 +28,7 @@ React.js, Python, Flask
 
    Backend:
    
-   Make sure python and pip is installed on your system.
+   Make sure python and pip are installed on your system.
    ```bash
    cd pdf-QA-AI/server
    pip install -r requirements.txt
@@ -59,14 +59,14 @@ React.js, Python, Flask
    ```
    The website will run at http://localhost:3000/
 
-## Explaination of my approach:
+## Explanation of my approach:
 1. I took the input of multiple pdf files. Extracted all the text into a single variable.
 2. Created chunks out of the combined text.
 3. Created embeddings of these chunks using Google's models/embedding-001
 4. Created a vector store and stored it on ChromaDb
-5. Took input from the user for the specific topic. Based on the topic, ran a query on chromadb to extract relevant text passages only.
-6. Took propmt from the user for the type and no. of questions to generate.
-7. Them used Google's LLM model 'gemini-pro' to run the query on relevant passage.
+5. Took input from the user for the specific topic. Based on the topic, I ran a query on chromadb to extract relevant text passages only.
+6. Took prompt from the user for the type and no. of questions to generate.
+7. Then used Google's LLM model 'gemini-pro' to run the query on the relevant passage.
 8. Finally, the QA test can be extracted in HTML or PDF format.
 
 
