@@ -71,8 +71,7 @@ React.js, Python, Flask
 
 
 ## Demo Video:
-
-
+https://youtu.be/2vfdoFLPD28
 
 ## Screenshots:
 
