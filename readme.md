@@ -17,6 +17,7 @@ React.js, Python, Flask
    git clone https://github.com/t4nm4y/pdf-QA-AI
    ```
 2. Install Dependencies
+   
    Frontend:
 
    Make sure node.js & npm is installed on your system.
@@ -42,6 +43,7 @@ React.js, Python, Flask
     GOOGLE_API_KEY=your_key
 
 4. Run the application:
+   
    Backend:
    ```bash
    cd pdf-QA-AI/server
