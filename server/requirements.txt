@@ -1,0 +1,9 @@
+os
+Flask
+python-dotenv
+Flask-CORS
+chromadb
+google-generativeai
+Markdown
+PyPDF2
+langchain
